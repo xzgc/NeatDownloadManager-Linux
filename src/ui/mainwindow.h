@@ -24,6 +24,7 @@ class MainWindow : public QMainWindow {
     Q_OBJECT
 public:
     explicit MainWindow(QWidget *parent = nullptr);
+    void expandFirstCategory();   // demo/screenshot helper
 
     void showFromTray();
     void startDownload(const QString &url);

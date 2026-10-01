@@ -49,6 +49,9 @@ int main(int argc, char *argv[])
     QCommandLineOption openAbout(QStringLiteral("open-about"),
                                  QStringLiteral("open the about window on startup"));
     cli.addOption(openAbout);
+    QCommandLineOption expandTree(QStringLiteral("expand-tree"),
+                                  QStringLiteral("expand the first category node (screenshots)"));
+    cli.addOption(expandTree);
     cli.addPositionalArgument(QStringLiteral("url"), QStringLiteral("URL to download"));
     cli.process(app);
 
@@ -78,6 +81,9 @@ int main(int argc, char *argv[])
         sw->setTab(cli.value(QStringLiteral("settings-tab")).toInt());
         sw->show();
     }
+
+    if (cli.isSet(expandTree))
+        w.expandFirstCategory();
 
     if (cli.isSet(openAbout)) {
         auto *aw = new neat::AboutWindow(&w);

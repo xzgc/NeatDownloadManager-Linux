@@ -35,6 +35,7 @@
 #include <QSet>
 #include <QSplitter>
 #include <QStandardPaths>
+#include <QDebug>
 #include <QLabel>
 #include <QSystemTrayIcon>
 #include <QTableWidget>
@@ -337,6 +338,12 @@ void MainWindow::buildToolbar()
     connect(m_actDelete, &QAction::triggered, this, &MainWindow::deleteSelected);
 }
 
+void MainWindow::expandFirstCategory()
+{
+    if (m_categories->topLevelItemCount() > 0)
+        m_categories->topLevelItem(0)->setExpanded(true);
+}
+
 QTreeWidget *MainWindow::buildCategoryTree()
 {
     // 1:1 with NeatCategoryTree (sub_4F2190): three top nodes sharing one icon,
@@ -529,6 +536,12 @@ qint64 MainWindow::idAtRow(int row) const
 int MainWindow::appendRow(qint64 id, const QString &name, qint64 sizeBytes, qint64 lastTrySecs,
                           const QString &status)
 {
+    // suspend sorting while building the row: an active sort indicator makes
+    // every setItem() re-sort immediately, so cells set after the first one
+    // land on whichever row took this index — corrupting sizes/progress/dates
+    const bool reenableSort = m_downloads->isSortingEnabled();
+    if (reenableSort)
+        m_downloads->setSortingEnabled(false);
     const int row = m_downloads->rowCount();
     m_downloads->insertRow(row);
 
@@ -556,6 +569,8 @@ int MainWindow::appendRow(qint64 id, const QString &name, qint64 sizeBytes, qint
                           .toString(QStringLiteral("yyyy-MM-dd HH:mm:ss")));
     dateItem->setData(NumericRole, lastTrySecs);
     m_downloads->setItem(row, ColLastTry, dateItem);
+    if (reenableSort)
+        m_downloads->setSortingEnabled(true);
     return row;
 }
 

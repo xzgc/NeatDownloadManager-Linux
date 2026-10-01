@@ -25,6 +25,8 @@ NeatDownloadManager（neatdownloadmanager.com）是 Windows/macOS 上的优秀�
 - **不含官方任何代码**；界面布局经反编译几何取证 1:1 重建
 - 免费使用、开源分发（GPL-3.0），分发时请保留作者署名
 
+![主窗口 / Main Window](docs/screenshots/main.png)
+
 ## 功能特性
 
 ### 下载引擎
@@ -61,6 +63,12 @@ NeatDownloadManager（neatdownloadmanager.com）是 Windows/macOS 上的优秀�
 - **中英双语实时切换**（工具栏一键切换，偏好记忆）
 - **现代扁平主题**：浅色 + 品牌绿（#27AE60），全部样式集中于一处 QSS
 - 系统托盘常驻、单实例（二次启动自动唤起）、关窗即藏入托盘
+
+<p align="center">
+  <img src="docs/screenshots/download-window.png" width="31%" alt="下载详情 · 分段进度">
+  <img src="docs/screenshots/proxy-settings.png" width="31%" alt="代理设置">
+  <img src="docs/screenshots/about.png" width="31%" alt="关于">
+</p>
 
 ### 其他
 
@@ -220,6 +228,8 @@ flat UI and bilingual (Chinese/English) interface.
 - **Contains no official code**; UI layout rebuilt 1:1 from decompiled geometry
 - Free to use, open-source distribution (GPL-3.0); keep the attribution
 
+![Main Window](docs/screenshots/main.png)
+
 ## Features
 
 ### Download Engine
@@ -266,6 +276,12 @@ flat UI and bilingual (Chinese/English) interface.
 - **Modern flat theme**: light + brand green (#27AE60), single-source QSS
 - System tray, single instance (relaunch raises the running one),
   close-to-tray
+
+<p align="center">
+  <img src="docs/screenshots/download-window.png" width="31%" alt="Download details · segment map">
+  <img src="docs/screenshots/proxy-settings.png" width="31%" alt="Proxy settings">
+  <img src="docs/screenshots/about.png" width="31%" alt="About">
+</p>
 
 ### Misc
 
