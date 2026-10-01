@@ -48,41 +48,46 @@
     </message>
     <message>
         <location filename="../src/ui/aboutwindow.cpp" line="50" />
+        <source>https://github.com/xzgc/NeatDownloadManager-Linux</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/ui/aboutwindow.cpp" line="55" />
         <source>Commercial use requires the author's prior written consent.</source>
         <translation>商用须先取得作者书面授权。</translation>
     </message>
     <message>
-        <location filename="../src/ui/aboutwindow.cpp" line="59" />
+        <location filename="../src/ui/aboutwindow.cpp" line="64" />
         <source>Check For Update</source>
         <translation>检查更新</translation>
     </message>
     <message>
-        <location filename="../src/ui/aboutwindow.cpp" line="60" />
+        <location filename="../src/ui/aboutwindow.cpp" line="65" />
         <source>OK</source>
         <translation>确定</translation>
     </message>
     <message>
-        <location filename="../src/ui/aboutwindow.cpp" line="81" />
+        <location filename="../src/ui/aboutwindow.cpp" line="86" />
         <source>Checking For Update...</source>
         <translation>正在检查更新...</translation>
     </message>
     <message>
-        <location filename="../src/ui/aboutwindow.cpp" line="98" />
+        <location filename="../src/ui/aboutwindow.cpp" line="103" />
         <source>Unable to Check For Update , Please Try Again Later</source>
         <translation>暂时无法检查更新，请稍后再试</translation>
     </message>
     <message>
-        <location filename="../src/ui/aboutwindow.cpp" line="111" />
+        <location filename="../src/ui/aboutwindow.cpp" line="116" />
         <source>NOT Up To Date, Click Above Button to get the New Version</source>
         <translation>有新版本，点击上方按钮获取</translation>
     </message>
     <message>
-        <location filename="../src/ui/aboutwindow.cpp" line="112" />
+        <location filename="../src/ui/aboutwindow.cpp" line="117" />
         <source>Download New Version</source>
         <translation>下载新版本</translation>
     </message>
     <message>
-        <location filename="../src/ui/aboutwindow.cpp" line="115" />
+        <location filename="../src/ui/aboutwindow.cpp" line="120" />
         <source>Application is Up To Date.</source>
         <translation>已是最新版本。</translation>
     </message>

@@ -46,6 +46,11 @@ AboutWindow::AboutWindow(QWidget *parent)
         tr("Linux Edition Copyright & Author : 连晋  over.arse@gmail.com"), this);
     linuxAuthor->setAlignment(Qt::AlignCenter);
     root->addWidget(linuxAuthor);
+    auto *repo = new QLabel(
+        tr("https://github.com/xzgc/NeatDownloadManager-Linux"), this);
+    repo->setAlignment(Qt::AlignCenter);
+    repo->setStyleSheet(QStringLiteral("color:#27AE60;"));
+    root->addWidget(repo);
     auto *commercial = new QLabel(
         tr("Commercial use requires the author's prior written consent."), this);
     commercial->setAlignment(Qt::AlignCenter);
