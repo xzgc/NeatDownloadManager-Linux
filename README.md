@@ -71,10 +71,22 @@ NeatDownloadManager（neatdownloadmanager.com）是 Windows/macOS 上的优秀�
 
 ## 安装
 
-### 方式一：deb 包（Ubuntu / Debian）
+### 方式一：从 Releases 下载安装包（推荐，适合大多数用户）
+
+打开 [Releases 页面](https://github.com/xzgc/NeatDownloadManager-Linux/releases/latest)：
+
+- Ubuntu / Debian 等系统 → 下载 `neatdm_0.1.0_amd64.deb`：
 
 ```sh
-sudo dpkg -i dist/neatdm_0.1.0_amd64.deb
+sudo dpkg -i neatdm_0.1.0_amd64.deb   # 缺依赖时再执行 sudo apt-get install -f
+```
+
+- 其他发行版 → 下载 `neatdm-0.1.0-linux-x64.tar.gz`，解压后 3 条命令装好：
+
+```sh
+tar xzf neatdm-0.1.0-linux-x64.tar.gz
+cp build/neatdm ~/.local/bin/ && cp packaging/neatdm.desktop ~/.local/share/applications/
+neatdm
 ```
 
 ### 方式二：用户级安装（免 root）
@@ -265,10 +277,22 @@ flat UI and bilingual (Chinese/English) interface.
 
 ## Install
 
-### Option 1: deb package (Ubuntu / Debian)
+### Option 1: download from Releases (recommended)
+
+Open the [Releases page](https://github.com/xzgc/NeatDownloadManager-Linux/releases/latest):
+
+- Ubuntu / Debian → grab `neatdm_0.1.0_amd64.deb`:
 
 ```sh
-sudo dpkg -i dist/neatdm_0.1.0_amd64.deb
+sudo dpkg -i neatdm_0.1.0_amd64.deb   # then `sudo apt-get install -f` if deps missing
+```
+
+- Other distros → grab `neatdm-0.1.0-linux-x64.tar.gz`:
+
+```sh
+tar xzf neatdm-0.1.0-linux-x64.tar.gz
+cp build/neatdm ~/.local/bin/ && cp packaging/neatdm.desktop ~/.local/share/applications/
+neatdm
 ```
 
 ### Option 2: user-level install (no root)
