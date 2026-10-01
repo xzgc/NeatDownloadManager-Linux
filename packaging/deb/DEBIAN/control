@@ -1,0 +1,12 @@
+Package: neatdm
+Version: 0.1.0
+Section: net
+Priority: optional
+Architecture: amd64
+Depends: libc6, libsqlite3-0, libqt6core6t64 (>= 6.4), libqt6gui6 (>= 6.4), libqt6widgets6 (>= 6.4), libqt6network6 (>= 6.4)
+Maintainer: NeatDM-Linux project
+Description: Download manager with browser-extension integration
+ Open-source, protocol-compatible Linux reimplementation of NeatDownloadManager:
+ segmented multi-connection engine, resume, bandwidth limits, HTTP(S) proxy and
+ SOCKS support, Basic/Digest auth, HLS downloads and native wake-up from the
+ official browser extension (WebSocket 127.0.0.1:10007).

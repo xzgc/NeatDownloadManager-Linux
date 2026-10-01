@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Neat Download Manager
+GenericName=Download Manager
+Comment=Download manager with browser-extension integration (NeatDownloadManager replica)
+Exec=neatdm
+Icon=neatdm
+Terminal=false
+Categories=Network;FileTransfer;
+Keywords=download;manager;neatdm;
+StartupNotify=false
+X-GNOME-Autostart-enabled=false
